@@ -1,0 +1,44 @@
+[versions]
+espressoCoreVersion = "3.6.1"
+junit = "1.2.1"
+junitVersion = "4.13.2"
+ktxCoreVersion = "1.13.1"
+lifecycleKtxVersion = "2.8.3"
+activityVersion = "1.9.0"
+composeBomVersion = "2024.06.00"
+agp = "8.1.1"
+org-jetbrains-kotlin-android = "1.8.10"
+appcompat = "1.7.0"
+material = "1.12.0"
+retrofitVersion = "2.11.0"
+koinVersion = "3.5.6"
+serializationVersion = "1.7.1"
+
+[libraries]
+androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "ktxCoreVersion" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junit" }
+androidx-lifecycle-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleKtxVersion" }
+androidx-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityVersion" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBomVersion" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-graphics = { module = "androidx.compose.ui:ui-graphics" }
+junit = { module = "junit:junit", version.ref = "junitVersion" }
+compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+retrofit-json-converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVersion" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinVersion" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinVersion" }
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinVersion" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationVersion" }
+
+
+[plugins]
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
